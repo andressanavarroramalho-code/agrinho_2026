@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planta Inteligente</title>
+  <meta name="description" content="Projeto sobre a jornada da cevada ao malte, conectando agro, tecnologia, sustentabilidade e cidade." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="topo">
+    <div class="header-inner">
+      <a class="logo" href="#inicio" aria-label="Voltar ao início">
+        <img src="./img/logo-planta-iot.png" alt="Logo Agrinho" />
+      </a>
+
+      <div class="site-title">Dê voz à sua natureza: Como a IoT está salvando jardins</div>
+
+      <nav class="navbar" aria-label="Navegação principal">
+        <div class="nav-desktop">
+          <div class="nav-more nav-more-only">
+            <button class="nav-more-btn" id="nav-more-btn" type="button" aria-expanded="false" aria-controls="nav-more-panel">
+              <span>Explorar</span>
+              <span class="nav-more-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav-more-panel" id="nav-more-panel">
+              <a href="#jornada">Jornada</a>
+              <a href="#galeria">Galeria</a>
+              <a href="#curiosidades">Curiosidades</a>
+              <a href="#quiz">Quiz</a>
+              <a href="#sustentabilidade">Sustentabilidade</a>
+              <a href="#video">Vídeo</a>
+              <a href="#hq">HQ</a>
+              <a href="#contato">Contato</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="hamburger" id="menu-toggle" aria-label="Abrir menu" aria-controls="nav-links" aria-expanded="false">
+          ☰
+        </button>
+
+        <ul class="nav-links nav-links-mobile" id="nav-links">
+          <li><a href="#jornada">Jornada</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+          <li><a href="#video">Vídeo</a></li>
+          <li><a href="#hq">HQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <button id="accessibility-btn" class="accessibility-fixed" aria-label="Menu de acessibilidade" aria-expanded="false">
+    A+
+  </button>
+
+  <div id="accessibility-menu" class="accessibility-menu hidden" role="dialog" aria-label="Menu de acessibilidade">
+    <button type="button" onclick="increaseFont()">Aumentar fonte</button>
+    <button type="button" onclick="decreaseFont()">Diminuir fonte</button>
+    <button type="button" onclick="toggleContrast()">Alto contraste</button>
+  </div>
+
+  <main>
+    <section id="inicio" class="hero-section reveal">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <span class="eyebrow">A planta que fala</span>
+          <h1>E se a sua planta pudesse enviar uma mensagem antes de murchar? Bem-vindo à era da Natureza Conectada</h1>
+          <p class="hero-lead">
+            Cuidar de uma planta parece simples, mas quem nunca ficou na dúvida: <strong>"Será que ela está com sede ou eu estou aguando demais?"</strong>. 
+            Muitas vezes, só percebemos que algo está errado quando as folhas começam a amarelar ou murchar.
+          </p>
+          <p>
+            O projeto Planta que Fala chega para acabar com esse "adivinho". É como se déssemos um tradutor automático para o seu jardim.
+          </p>
+
+          <div class="hero-actions">
+            <a class="action-btn" href="#jornada">Como funciona?</a>
+            <a class="secondary-btn" href="#sustentabilidade">Por que você precisa disso?</a>
+          </div>
+
+          <div class="hero-points" aria-label="Pontos centrais do projeto">
+            <div class="hero-point">
+              <strong>Ela sente</strong>
+              <span>O sensor percebe que a terra está ficando seca.</span>
+            </div>
+            <div class="hero-point">
+              <strong>Ela fala</strong>
+              <span>Em vez de gráficos complicados, você recebe uma mensagem amigável: 
+                "Oi! Pode me dar um pouco de água? Minha terra está bem seca!".</span>
+            </div>
+            <div class="hero-point">
+              <strong>Ela envia</strong>
+              <span>Através do Wi-Fi da sua casa, essa informação viaja até o seu celular.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="./img/imagem mulher.png" alt="imagem mulher" />
+            <div class="hero-image-overlay">
+              <span>Adeus às plantas mortas</span>
+              <strong>Você cuida exatamente quando elas precisam, nem antes, nem depois.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jornada" class="content-section reveal">
+      <div class="section-heading">
+        <span class="section-tag">Tecnologia invisível</span>
+        <h2>Conexão real</h2>
+        <p>A Planta que Fala transforma o cuidado em conversa. É a tecnologia ajudando a natureza a florescer no seu ritmo.</p>
+      </div>
+
+      <div class="process-grid">
+  <article class="surface-block process-card">
+    <div class="process-number">01</div>
+    <h3>Escuta Ativa (Sensores)</h3>
+    <p>Sensores de umidade inseridos no solo monitoram em tempo real a sede da planta, captando dados que o olho humano não consegue ver.</p>
+  </article>
+
+  <article class="surface-block process-card">
+    <div class="process-number">02</div>
+    <h3>Tradução Digital (IoT)</h3>
+    <p>O hardware processa esses sinais e os envia via Wi-Fi para a nuvem, transformando pulsos elétricos em mensagens compreensíveis.</p>
+  </article>
+
+  <article class="surface-block process-card">
+    <div class="process-number">03</div>
+    <h3>Conversa no Celular</h3>
+    <p>Você recebe uma notificação amigável no seu dispositivo, criando uma ponte direta entre a necessidade da natureza e a sua ação.</p>
+  </article>
+</div>
+    </section>
+
+   <section id="galeria" class="content-section reveal">
+  <div class="section-heading">
+    <span class="section-tag">Galeria</span>
+    <h2>Tecnologia no Jardim</h2>
+    <p>Veja como os sensores capturam os sinais vitais da natureza.</p>
+  </div>
+
+  <div class="surface-block carousel-shell">
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" onclick="changeSlide(-1)" aria-label="Slide anterior">❮</button>
+      
+      <div class="carousel-slide">
+        <img id="carousel-image" src="./img/sensor-umidade.png" alt="Sensor de Umidade" />
+      </div>
+
+      <button class="carousel-btn right" onclick="changeSlide(1)" aria-label="Próximo slide">❯</button>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="carousel-text">
+        <h3 id="carousel-title">Monitoramento em Tempo Real</h3>
+        <p id="carousel-description">Sensores de umidade garantem que a planta receba água apenas quando necessário.</p>
+      </div>
+      <div class="carousel-dots">
+        <button class="dot active" data-index="0" onclick="currentSlide(0)"></button>
+        <button class="dot" data-index="1" onclick="currentSlide(1)"></button>
+        <button class="dot" data-index="2" onclick="currentSlide(2)"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="curiosidades" class="content-section reveal">
+      <div class="section-heading">
+        <span class="section-tag">Curiosidades</span>
+        <h2>Você sabia?</h2>
+        <p>A tecnologia está mudando a forma como interagimos com o verde ao nosso redor.</p>
+      </div>
+
+      <div class="surface-block info-box">
+        <p id="fact-text">As plantas emitem sinais elétricos quando estão sob estresse, e os sensores de IoT conseguem traduzir esses sinais para nós.</p>
+        <button id="fact-btn" class="action-btn" type="button">Ver outra curiosidade</button>
+      </div>
+    </section>
+
+    <section id="quiz" class="content-section reveal">
+      <div class="section-heading">
+        <span class="section-tag">Interatividade</span>
+        <h2>Quiz: Sua planta te conhece?</h2>
+        <p>Teste seus conhecimentos sobre o cuidado tecnológico com as plantas.</p>
+      </div>
+
+      <form id="quiz-form" class="surface-block quiz-form">
+        <div class="quiz-question">
+          <p><strong>1.</strong> O que o sensor de umidade realmente mede no solo?</p>
+          <label><input type="radio" name="q1" value="errado" /> A temperatura das raízes</label>
+          <label><input type="radio" name="q1" value="certo" /> A quantidade de água disponível para a planta</label>
+          <label><input type="radio" name="q1" value="errado" /> A cor da terra</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>2.</strong> Qual a principal vantagem de usar IoT (Internet das Coisas) no jardim?</p>
+          <label><input type="radio" name="q2" value="errado" /> Fazer a planta crescer 10x mais rápido</label>
+          <label><input type="radio" name="q2" value="certo" /> Receber alertas reais antes da planta murchar</label>
+          <label><input type="radio" name="q2" value="errado" /> Mudar a cor das flores via Wi-Fi</label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>3.</strong> O que significa dizer que uma "planta fala"?</p>
+          <label><input type="radio" name="q3" value="certo" /> Que seus dados biológicos são convertidos em notificações</label>
+          <label><input type="radio" name="q3" value="errado" /> Que ela emite sons audíveis por humanos</label>
+          <label><input type="radio" name="q3" value="errado" /> Que ela usa inteligência artificial para conversar sobre o tempo</label>
+        </div>
+
+        <button type="submit" class="action-btn quiz-submit-btn">Ver resultado</button>
+      </form>
+      <div id="quiz-result" class="surface-block quiz-result" aria-live="polite"></div>
+    </section>
+
+    <section id="sustentabilidade" class="content-section reveal">
+      <div class="section-heading">
+        <span class="section-tag">Sustentabilidade</span>
+        <h2>Tecnologia que poupa água</h2>
+        <p>Monitorar a umidade não é apenas sobre manter a planta viva, é sobre usar recursos de forma inteligente.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="info-card expandable-card">
+          <button class="card-toggle" type="button" aria-expanded="false">
+            <span>Redução de Desperdício</span>
+            <span class="card-icon">+</span>
+          </button>
+          <div class="card-content">
+            <p>Ao aguar apenas quando o sensor indica necessidade, evitamos o desperdício de água potável em solos já saturados.</p>
+          </div>
+        </article>
+
+        <article class="info-card expandable-card">
+          <button class="card-toggle" type="button" aria-expanded="false">
+            <span>Saúde do Solo</span>
+            <span class="card-icon">+</span>
+          </button>
+          <div class="card-content">
+            <p>O excesso de água remove nutrientes essenciais. O monitoramento garante que o solo mantenha sua fertilidade por mais tempo.</p>
+          </div>
+        </article>
+
+        <article class="info-card expandable-card">
+          <button class="card-toggle" type="button" aria-expanded="false">
+            <span>Ecossistema Urbano</span>
+            <span class="card-icon">+</span>
+          </button>
+          <div class="card-content">
+            <p>Mais plantas sobrevivendo em apartamentos e escritórios ajudam a filtrar o ar e regular a temperatura das cidades.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="video" class="content-section reveal">
+  <div class="section-heading">
+    <span class="section-tag">Tecnologia</span>
+    <h2>Como funciona um Jardim Inteligente?</h2>
+    <p>Veja na prática como a união entre código e biologia salva vidas verdes.</p>
+  </div>
+
+  <div class="surface-block video-container">
+    <div class="video-container">
+    <video width="100%" controls>
+        <source src="./img/Giving_Nature_a_Voice.mp4" type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeos.
+    </video>
+</div>
+</section>
+
+    <section id="hq" class="content-section reveal">
+      <div class="section-heading">
+        <span class="section-tag">DIVERSÃO</span>
+        <h2>Super desafio</h2>
+        <p>Exercite seu raciocínio lógico com nosso Jardim de Peças.</p>
+      </div>
+
+      <div class="surface-block hq-shell">
+        <div class="hq-frame-container">
+          <iframe src="./HQ/hq.html" title="História em Quadrinhos" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="content-section reveal">
+      <div class="section-heading">
+        <span class="section-tag">Contato</span>
+        <h2>Responsável pelo projeto</h2>
+      </div>
+
+      <div class="surface-block contact-card contact-card-professional">
+        <div class="contact-card-header">
+          <h3>Andressa Navarro Ramalho Pimpão</h3>
+        </div>
+
+        <div class="contact-info-grid">
+          <div class="contact-info-item">
+            <span class="contact-label">Função</span>
+            <strong>Professora de Programação e IA</strong>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-label">E-mail</span>
+            <a href="mailto:andressa.@escola.pr.gov.br">andressa.navarro.ramalho@escola.pr.gov.br</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner footer-inner-enhanced">
+      <p class="footer-copy">&copy; 2026 - NRE Guarapuava | Programação Paraná</p>
+
+      <div class="footer-right-cluster">
+        <div class="footer-logos" aria-label="Logos institucionais">
+          <img src="./img/NRE Guarapuava_vert_branco.png" alt="Logo do NRE Guarapuava" class="footer-logo footer-logo-nre" />
+          <img src="./img/ProgramacaoParana_logo-vertical-mono-branca.png" alt="Logo da Programação Paraná" class="footer-logo footer-logo-programacao" />
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/schonlopes" target="_blank" rel="noreferrer">
+            <img src="./img/github.png" alt="GitHub" class="social-icon" />
+          </a>
+          <a href="https://www.instagram.com/schonlopes" target="_blank" rel="noreferrer">
+            <img src="./img/instagram.png" alt="Instagram" class="social-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
